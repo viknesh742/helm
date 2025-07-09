@@ -4,7 +4,7 @@ image:
   repository: ""
   tag: ""
   pullPolicy: IfNotPresent
-  fullImageOverride: __ECR_IMAGE_URI__
+  fullImageOverride: python:3.11-slim
 
 service:
   type: LoadBalancer
