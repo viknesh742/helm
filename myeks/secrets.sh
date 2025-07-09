@@ -7,5 +7,6 @@ sed "s|__ECR_IMAGE_URI__|${IMAGE}|g" values.yaml > values.final.yaml
 
 rm -rf values.yaml
 mv values.final.yaml values.yaml
+cd ..
 helm install myeks ./myeks
 helm upgrade myeks ./myeks
