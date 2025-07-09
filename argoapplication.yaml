@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/viknesh742/helm.git'  # 🔁 Replace with your actual Git repo URL
     targetRevision: HEAD
-    path: helm/myeks  # 🔁 Replace with the directory path inside your repo where the Helm chart exists
+    path: myeks  # 🔁 Replace with the directory path inside your repo where the Helm chart exists
     helm:
       valueFiles:
         - values.yaml  # Optional: you can include this if you're committing values.yaml
