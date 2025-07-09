@@ -1,9 +1,10 @@
 replicaCount: 2
 
 image:
-  repository: __ECR_IMAGE_URI__
-  tag: latest
+  repository: ""
+  tag: ""
   pullPolicy: IfNotPresent
+  fullImageOverride: __ECR_IMAGE_URI__
 
 service:
   type: LoadBalancer
