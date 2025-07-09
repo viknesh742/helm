@@ -1,0 +1,14 @@
+replicaCount: 2
+
+image:
+  repository: __ECR_IMAGE_URI__
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+
+containerPort: 8080
+
+appLabel: myeks
