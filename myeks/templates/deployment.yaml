@@ -20,3 +20,4 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: {{ .Values.containerPort }}
+          command: ["python", "-m", "http.server", "{{ .Values.containerPort }}"]
